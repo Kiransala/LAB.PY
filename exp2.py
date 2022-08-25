@@ -17,16 +17,17 @@ def palindrome(string):
         
 user = False
 while not user:
-    choice = input("1.Palindrome\n2.Factorial\n3.stop\nEnter a choice to find?\n").lower()
+    choice = input("1.Palindrome\n2.Factorial\n3.Exit\nEnter your choice of operations : ").lower()
     if choice == "factorial":
         number = int(input("Enter a number: "))  
         factorial(number)
-        print("_____________________________________________\n")
+        print("---------------------------------------------\n")
     elif choice == "palindrome":
         a_string = input("Enter a string: ")
         palindrome(a_string)
-        print("_____________________________________________\n")
-    elif choice == "stop":
+        print("---------------------------------------------\n")
+    elif choice == "exit":
+        print("Thank you.")
         user = True
     else:
         print("Enter a valid choice.\n")
