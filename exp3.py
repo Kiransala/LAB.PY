@@ -6,7 +6,7 @@ condition = False
 
 while not condition:
     print("\n")
-    choice = int(input("Choose one operation on lists: \n1.Merge and sort the two lists.\n2.Update the first element with X value and delete the middle element of the list.\n3.Find max and min elements from the list.\n4.Add N names into the existing number list and check if word python is present in the list.\n5.Exit.\nChoice: "))
+    choice = int(input("Choose one operation : \n1.Merge and sort the two lists.\n2.Update the first element with X value and delete the middle element of the list.\n3.Find max and min elements from the list.\n4.Add N names into the existing number list and check if word python is present in the list.\n5.Exit.\nChoice: "))
     if choice == 1:
         list3 = list()
         list3 = list1 + list2
