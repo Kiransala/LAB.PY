@@ -24,14 +24,15 @@ while not user:
 	        
 	elif choice==2 :
 	    upid=int(input("Enter employee id to be updated: "))
-	    upname=input(f"Enter employee name at id {upid} to be updated: ")
+	    upname=input(f"Enter employee name to be updated at id {upid}: ")
 	    for q in l1:
 	        if q.id == upid:
 	            q.setvalue(upid, upname)
 	       
 	elif choice==3 :
+	    print("\n\n\t\tEMPLOYEES\t\t\n")
 	    for i in l1:
-	        print(f"Employee \nid: {i.id}  name: {i.name}")
+	        print(f"\tId: {i.id} | Name: {i.name}")
 
 	elif choice==4 :
 	    did=int(input("Enter employee id to be deleted: "))
@@ -43,4 +44,3 @@ while not user:
 		user=True
 	else :
 		print("Invalid choice")
-
