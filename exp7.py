@@ -37,7 +37,7 @@ while not user:
 	    did=int(input("Enter employee id to be deleted: "))
 	    for d in l1:
 	        if d.id == did:
-	            l1.remove(did)
+	            l1.remove(d)
 	    
 	elif choice==5 :
 		user=True
