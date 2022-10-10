@@ -51,3 +51,14 @@ def addition(a=None,b=None,c=None):
 		return a+b+c
 	elif a!=None and b!=None:
 		return a+b
+
+"""THIS IS 'exp92.py' FILE"""
+
+def subtraction(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
