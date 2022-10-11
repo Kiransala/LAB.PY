@@ -8,15 +8,15 @@ class NumTooSmallError(Exception):
         self.msg=msg
     
 num = random.randint(1,100)
-count = 100
+count = 0
 while True:
-    count+=1
+    count += 1
     try:
-        inum=int(input("Enter a number: "))
-        if inum<num:
+        inum = int(input("Enter a number: "))
+        if inum < num:
             raise NumTooSmallError("Enter a Greater number")
             
-        elif inum>num:
+        elif inum > num:
             raise NumTooLargeError("Enter a Smaller number")
         else:
             break
@@ -25,4 +25,4 @@ while True:
     except NumTooLargeError as me:
         print(me)
 
-print(f"Correctly gussed the Number: {num} in Gusses: {num}")
+print(f"Correctly gussed the Number: {num} in Gusses: {count}")
