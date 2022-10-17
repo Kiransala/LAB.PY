@@ -45,7 +45,7 @@ while not user:
         print("Enter a valid choice")
         
         
-"""THIS IS 'exp91.py' INSIDE A FILE NAME 'x' """
+"""THIS IS 'exp91.py' INSIDE A FOLDER NAME 'x' """
 def addition(a=None,b=None,c=None):
 	if a!=None and b!=None and c!=None:
 		return a+b+c
