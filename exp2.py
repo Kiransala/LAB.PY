@@ -1,33 +1,25 @@
 def factorial(number):
     factorial = 1
     for i in range(1, number + 1):
-        factorial = factorial*i    
-    print("Factorial %d is: %d." %(number,factorial))
-    
+        factorial = factorial * i    
+    print(f"Factorial of {number} is: {factorial}")
 
-def palindrome(string):
-    reversed = ""
-    for i in range(len(string), 0, -1):
-        reversed += string[i-1]
-    if string == reversed:
-        print("It's a palindrome number.")
-    else:
-        print("It's not a palindrome number.")
-        
-        
+def palindrome(string):  
+  if(string==string[::-1]):  
+      print("The letter is a palindrome")  
+  else:  
+      print("The letter is not a palindrome") 
+
 user = False
 while not user:
-    choice = input("1.Palindrome\n2.Factorial\n3.Exit\nEnter your choice of operations : ").lower()
-    if choice == "factorial":
+    choice = int(input("\n\n1.Factorial\n2.Palindrome\n3.Exit\nEnter your choice of operations : "))
+    if choice == 1:
         number = int(input("Enter a number: "))  
         factorial(number)
-        print("---------------------------------------------\n")
-    elif choice == "palindrome":
+    elif choice == 2:
         a_string = input("Enter a string: ")
         palindrome(a_string)
-        print("---------------------------------------------\n")
     elif choice == "exit":
-        print("Thank you.")
         user = True
     else:
         print("Enter a valid choice.\n")
